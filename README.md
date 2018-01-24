@@ -10,16 +10,13 @@ I2C reference: http://www.instructables.com/id/Raspberry-Pi-I2C-Python/?ALLSTEPS
 
 To change baud rate: http://raspberrypi.stackexchange.com/questions/29422/what-bitrate-can-i-get-from-an-i2c-bus
 
-The site I used to program the ADC and DCAs in C and where I got sampleADS1115.c
-http://openlabtools.eng.cam.ac.uk/Resources/Datalog/RPi_ADS1115/
-
-To set up a fresh RPi:
+## To set up a fresh RPi:
+```
 At first ssh pi@raspberrypiu  use password raspberry
 To update the distribution:
   sudo apt-get update
   sudo apt-get dist-upgrade
 
-```
 sudo adduser rwilson
 add rwilson to groups i2c and sudo in /etc/group
 cp i2c.conf to /etc/modprobe.d
