@@ -67,24 +67,27 @@ can use lsmod to see if the watchdog module is loaded
 
 Info for installing redis at:
 https://www.fullstackpython.com/blog/install-redis-use-python-3-ubuntu-1604.htmlhttp://mjavery.blogspot.com/2016/05/setting-up-redis-on-raspberry-pi.html
+```
 
-To seet a sttic IP address, add his to /etc/dhcpcd.conf 
+To seet a sttic IP address, add this to /etc/dhcpcd.conf 
+```
 interface eth0
 
 static ip_address=131.142.8.61/21
 static routers=131.142.8.1
 static domain_name_servers=131.142.21.50
+```
 
 Adding to /etc/network/interfaces did not seem to work:
-
+```
 iface eth0 inet static
   address 131.142.8.61
   netmask 255.255.248.0
   gateway 131.142.8.1
+```
 
 /etc/modprobe.d/raspi-blacklist.conf is the place to uncomment the modules for
 bluetooth and wifi.
-```
 
 To copy an sd card see instructions: https://computers.tutsplus.com/articles/how-to-clone-raspberry-pi-sd-cards-using-the-command-line-in-os-x--mac-59911
 
