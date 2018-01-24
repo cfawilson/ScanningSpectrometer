@@ -19,10 +19,7 @@ To update the distribution:
   sudo apt-get update
   sudo apt-get dist-upgrade
 
-#To avoid the wirelewss dongle shutting down:
-#Assume your Pi connects to network through wlan0. Add new line with
-#wireless-power off right BELOW the line iface wlan0 inet manual
-
+```
 sudo adduser rwilson
 add rwilson to groups i2c and sudo in /etc/group
 cp i2c.conf to /etc/modprobe.d
@@ -87,11 +84,13 @@ iface eth0 inet static
 
 /etc/modprobe.d/raspi-blacklist.conf is the place to uncomment the modules for
 bluetooth and wifi.
+```
 
 To copy an sd card see instructions: https://computers.tutsplus.com/articles/how-to-clone-raspberry-pi-sd-cards-using-the-command-line-in-os-x--mac-59911
 
-First find its/dev entry by running 'diskutil list', then use dd to make an image file:
+First find its /dev entry by running 'diskutil list', then use dd to make an image file:
+```
 sudo dd if=/dev/disk4 bs=2m of=rpi3_10_20_17.dmg
 dd will print a progress report if you send it a SIGINFO:
 sudo kill -INFO 11767
-
+```
