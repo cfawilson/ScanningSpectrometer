@@ -49,8 +49,10 @@ dpkg -S fname to see which package fname came from`
 
 For Python also need: python-smbus and python-matplotlib and ipython
 
-To archive RPi files on a computer:  rsync -av "$RPI:SteveBoard/*" .
-In the other direction to the RPi  rsync -av SteveBoard/ $RPI:SteveBoard/
+To archive RPi files on a computer (assuming that $RPI contains its IP address):
+rsync -av "$RPI:ScanningSpectrometer/*" .
+In the other direction to the RPi
+rsync -av ScanningSpectrometer/ $RPI:ScanningSpectrometer/
 
 To set up the watchdog timer:
 sudo apt-get install watchdog  //get the watchdog daemon
