@@ -1,7 +1,7 @@
 # ScanningSpectrometer
 RPi software for Edward's scanning spectrometer using Brian's analog and digital IO Board
 
-#Notes for setting up an RPi
+##Notes for setting up an RPi
 References on the web which I found useful:
 
 A good guide to apt-get is at https://help.ubuntu.com/community/AptGet/Howto
